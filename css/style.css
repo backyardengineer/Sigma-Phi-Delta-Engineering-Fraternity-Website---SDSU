@@ -1093,7 +1093,7 @@
 		}
 
 	#banner-1 {
-		background-image: url(../images/dark_tint.png), url('http://25.media.tumblr.com/f254105ae6672e6252d171badfe14299/tumblr_mhiz6jgJ7N1rag9fdo1_500.gif');
+		background-image: url(../images/dark_tint.png), url('../images/website pictures/recruitment-party.gif');
 		background-position: center center;
 		background-size: cover;
 		color: #ffffff;
@@ -1120,7 +1120,7 @@
 
 
 #banner {
-		background-image: url(../images/dark_tint.png), url('http://i.imgur.com/EJxY80s.gif');
+		background-image: url(../images/dark_tint.png), url('../images/website pictures/frontpage-rocket.gif');
 		background-position: center center;
 		background-size: cover;
 		color: #ffffff;
