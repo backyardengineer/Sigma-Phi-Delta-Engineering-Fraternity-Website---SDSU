@@ -6,7 +6,7 @@ function runServer(port)
 {
 	var app = express();
 
-	app.use(express.static("static"))
+	app.use(express.static("static"));
 
 	app.get("/", (req, resp) => {resp.send(fs.readFileSync("templates/index.html").toString());});
 
@@ -21,11 +21,6 @@ function runServer(port)
 		{
 			resp.send(fs.readFileSync(TEMPLATES_DIR + "error.html").toString());
 		}
-	});
-
-	app.get("/static/:dir/:file", function(req, resp){
-		const FILE_PATH = "static/" + req.params.dir + "/" + req.params.file;
-		resp.send(resp.send(fs.readFileSync(FILE_PATH).toString()));
 	});
 
 	app.listen(port, () => {console.log("running at 0.0.0.0:%d", port)});
